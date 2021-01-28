@@ -6,10 +6,10 @@
     }
 
     .ul li{
-        width: 7em;
+        width: 8em;
         border-radius: 10%;
         margin: 0.1em;
-        border: 2px solid $border-primary;
+        border-bottom: 2px solid $border-primary;
         box-sizing: border-box;
     }
 
@@ -33,7 +33,7 @@
         align-content: space-between;
         display:none;
         justify-content: space-around;
-        border: 2px solid $bg-secondary;
+        border-bottom: 2px solid $bg-secondary;
     
     }
 
@@ -42,6 +42,18 @@
         flex-direction: column;
     
     }
+
+    section.news_section article p {
+        font-size: 15px;
+    
+    }
+
+    .news_section {
+
+        height: 75em;
+   
+    }
+    
 
 }
 
