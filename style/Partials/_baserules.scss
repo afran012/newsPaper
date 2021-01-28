@@ -1,0 +1,31 @@
+html {
+  font-size: 10px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-family: $font-primary; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+  color: $font-color1;
+}
+  
+  
+  
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 1px;
+  padding: 0; 
+  border: none;
+  list-style: none;
+  text-decoration: none;	
+  outline: none;
+}
+
+%circle{
+  width: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 4em;
+  border: 1.5px solid rgb(34, 75, 44);
+  border-radius: 30%;
+  box-shadow: -4px 1px 1px 3px $bg-primary;
+  line-height: 3em;
+  text-align: center;
+}

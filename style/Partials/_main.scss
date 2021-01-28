@@ -1,0 +1,17 @@
+.news_section {
+
+    width: 100%;
+    height: 25em;
+    border-radius: 3px;
+    border: 5px solid $border-primary;
+    overflow: auto;    
+}
+
+
+.main_section {
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

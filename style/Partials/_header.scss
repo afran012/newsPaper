@@ -1,0 +1,30 @@
+
+
+h1 {
+    margin: 0;
+    width: 20%;
+    padding: 0.1em 0.1em;
+    color: $font-color2;
+    text-shadow: 0.2em 0.2em 0.2em $shadow;
+    overflow: hidden;
+    text-align: center;
+}
+    
+header {
+    background: $primary-color4  ;
+    color: $font-color2;
+    border: 0.2em solid $border-primary;
+    width: 99%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 15%;
+        margin: 0.5em;
+        border: 0.2em solid $border-primary;
+        border-radius: 28%;
+    }    
+}

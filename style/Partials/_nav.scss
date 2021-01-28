@@ -1,0 +1,88 @@
+/*Se le agregan ancho a los elemendos de el navegador*/
+.ul li{
+    width: 7em;
+    border-radius: 10%;
+    margin: 1.5em;
+    border: 2px solid $border-primary;
+    box-sizing: border-box;
+}
+
+.ul li:hover{
+    background: #5a5a5a;
+}
+
+
+.navbar {
+    display:flex;
+    /*align-items: center;
+    align-content: space-between;
+    justify-content: space-around;*/
+    box-sizing: border-box;
+    /*width: 98%;
+    height: 15px;*/
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px solid $bg-primary;  
+}
+
+.ul{
+    align-items: center;
+    box-sizing: border-box;
+    align-content: space-between;
+    display:flex;
+    justify-content: space-around;
+    border: 2px solid $bg-secondary;
+
+}
+
+
+/*El display del inpud se inhabilita cuando se esta en tamaño grande*/
+div.menu input {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2; 
+    border: 2px solid $bg-tertiary;
+}
+
+/*Aca se define las lineas del Menu ripo hamburguesa
+y su comportamiento al darle click al checkbox*/
+
+div.menu span {
+    display: none;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    transform-origin: 0px 0px;
+}
+
+span:first-child {
+    transform-origin: 0% 100%;
+}
+
+span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+input:checked ~ span {
+    transform: rotate(45deg);
+}
+input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg);
+}
+
+input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+}
+
+/*Cuando se hace click en el checkbox, se visualiza el Menun*/
+
+input:checked ~ ul {
+    display: flex ;
+}
